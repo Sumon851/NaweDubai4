@@ -1,0 +1,18 @@
+,Unnamed: 0.5,Unnamed: 0.4,Unnamed: 0.3,Unnamed: 0.2,Unnamed: 0.1,Unnamed: 0,area,duration,Main tasks,Data requirement,Deliverable,base,col1,col2,col3
+0,0,0,0,0,0,0,>1ha, 3-4 weeks,"1. Surface preparation according to development plan
+2. Watershed delineation
+3. 1D model setup (MIKE URBAN)
+4. 2D model setup (MIKE21 FM)
+5. 1D-2D coupled model setup
+6. Flood mapping and problem identification
+7. Solution
+8. Comparison of pre & post development scenarios","1. Project area
+2. Existing and proposed stormwater pipe network including nodes and manholes (shp files) 
+3. Existing and proposed stormwater management facilities (dwg in 3D)
+4. Water level/flow at recipient (optional)
+5. Specification of scenarios (return period, development stage etc.)
+6. Elevation/DEM/Height model (if not available, we use SCALGO)
+7. Geo reports (if not available, we use SGU)
+8. Existing/proposed property boundaries
+9. Existing and proposed road surface and elevation","1. Flood investigation report
+2. All maps and drawing (shp file)",40000,392000.0,6000,6000
