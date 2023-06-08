@@ -11,7 +11,8 @@ st.markdown(no_sidebar_style, unsafe_allow_html=True)
 
 
 df=pd.read_csv('new.csv')
-budget=df.loc[0,'col1']
+df['budget']=df['col1']+df['soil_col']+df['landue_col']
+budget=df.loc[0,'budget']
 
 st.subheader('Extra task ')
 extra_prompt1=st.selectbox("Do you want PM report to be in Swedish?",options=[' ','No','Yes'] )
@@ -63,4 +64,3 @@ with tab3:
 with tab4:
 	st.subheader(':blue[Deliverables]')
 	st.write(df.loc[0,'Deliverable'])
-	
