@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from streamlit_extras.switch_page_button import switch_page
-st.set_page_config(page_title='Soil information',initial_sidebar_state='collapsed')
+st.set_page_config(page_title='landuse information',initial_sidebar_state='collapsed')
 no_sidebar_style = """
     <style>
         div[data-testid="stSidebarNav"] {display: none;}
@@ -10,7 +10,7 @@ no_sidebar_style = """
 st.markdown(no_sidebar_style, unsafe_allow_html=True)
 
 
-st.subheader('please provide following soil information')
+st.subheader('please provide following landuse information')
 landuse=['','agriculture','office','industry','school', 'residential', 'commercial','block']
 option=[' ','0-10','11-30','31-50','51-100','101-200','201-350','351-500','501-700','701-1000','>1000'
 ]
@@ -33,7 +33,7 @@ else:
 	f=float(factor[index])
 
 df=pd.read_csv('new.csv')
-df['col1']=df['col1']+f*df['base']
+df['landue_col']=f*df['base']
 df.to_csv('new.csv')
 if st.button('NEXT :arrow_forward:'):
 	switch_page('final')
