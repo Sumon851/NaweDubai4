@@ -25,8 +25,13 @@ for index,types in enumerate(soil):
 	if sum(number_fruits)==100:
 		break
 soil_sum=sum(top)/100
+try:
+	print(soil_sum)
+except:
+	pass
 df=pd.read_csv('new.csv')
-df['col1']=df['col1']+soil_sum*df['base']
+df['soil_col']=soil_sum*df['base']
+
 df.to_csv('new.csv')
 if st.button('NEXT :arrow_forward:'):
 	switch_page('landuse')
